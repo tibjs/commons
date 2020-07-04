@@ -11,17 +11,17 @@ cache:
 
 test:
   script:
-    - npm install
+    - npm run postinstall
     - npm run build
     - npm run coverage:ci
-  coverage: /Statements\s+:\s(\d+.?\d+)%/ 
+  coverage: /Statements\s+:\s(\d+.?\d+)%/
   artifacts:
     when: always
     paths:
       # save coverage results
       - coverage
     expire_in: 10 days
-  
+
 # store and publish code coverage HTML report folder
 # https://about.gitlab.com/blog/2016/11/03/publish-code-coverage-report-with-gitlab-pages/
 # the coverage report will be available both as a job artifact
