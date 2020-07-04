@@ -14,6 +14,7 @@ test:
     - npm install
     - npm run postinstall
     - npm run build
+    - npm run test:ci
     - npm run coverage:ci
   coverage: /Statements\s+:\s(\d+.?\d+)%/
   artifacts:
