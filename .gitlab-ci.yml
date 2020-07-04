@@ -11,6 +11,7 @@ cache:
 
 test:
   script:
+    - npm run install
     - npm run postinstall
     - npm run build
     - npm run coverage:ci
