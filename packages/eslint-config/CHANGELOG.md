@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 8.1.0 (2020-07-04)
+
+
+### Features
+
+* initial commit ([d2d3042](https://github.com/artlab/artlab-commons/commit/d2d3042c9282625e4f5e8006d391d1c4ac42fc7d))
+
+
+
+
+
 ## [8.0.3](https://github.com/artlab/artlab-commons/compare/@artlab/eslint-config@8.0.2...@artlab/eslint-config@8.0.3) (2020-06-30)
 
 **Note:** Version bump only for package @artlab/eslint-config

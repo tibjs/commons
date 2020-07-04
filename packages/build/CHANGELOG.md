@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 6.2.0 (2020-07-04)
+
+
+### Features
+
+* initial commit ([d2d3042](https://github.com/artlab/artlab-commons/commit/d2d3042c9282625e4f5e8006d391d1c4ac42fc7d))
+
+
+
+
+
 # [6.1.0](https://github.com/artlab/artlab-commons/compare/@artlab/build@6.0.0...@artlab/build@6.1.0) (2020-06-30)
 
 
