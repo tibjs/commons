@@ -1,0 +1,43 @@
+# This file is a template, and might need editing before it works on your project.
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/node/tags/
+image: node:latest
+
+# This folder is cached between builds
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+cache:
+  paths:
+    - node_modules/
+
+test:
+  script:
+    - npm install
+    - npm run build
+    - npm run coverage:ci
+  coverage: /Statements\s+:\s(\d+.?\d+)%/ 
+  artifacts:
+    when: always
+    paths:
+      # save coverage results
+      - coverage
+    expire_in: 10 days
+  
+# store and publish code coverage HTML report folder
+# https://about.gitlab.com/blog/2016/11/03/publish-code-coverage-report-with-gitlab-pages/
+# the coverage report will be available both as a job artifact
+# and at https://artlab.gitr.io/artlab-commons/
+pages:
+  stage: deploy
+  dependencies:
+    - test
+  script:
+    # delete everything in the current public folder
+    # and replace with code coverage HTML report
+    - rm -rf public/*
+    - cp -r coverage/lcov-report/* public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 30 days
+  only:
+    - master
