@@ -43,7 +43,7 @@
     "update-all-deps": "npm update && lerna exec -- npm update && npm run update-package-locks",
     "update-monorepo-file": "node bin/update-monorepo-file",
     "sync-dev-deps": "node bin/sync-dev-deps",
-    "version": "npnpm run update-peer-deps",
+    "version": "npm run update-peer-deps",
     "outdated": "npm outdated --depth 0 && lerna exec --no-bail \"npm outdated --depth 0\"",
     "tsdocs": "lerna run --scope @artlab/tsdocs build:tsdocs",
     "coverage:ci": "node packages/build/bin/run-nyc report --reporter=text-summary",
