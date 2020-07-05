@@ -5,7 +5,7 @@
 
 'use strict';
 
-const debug = require('debug')('loopback:build:merge-mocha-configs');
+const debug = require('debug')('artlab:build:merge-mocha-configs');
 const {assignWith} = require('lodash');
 
 module.exports = mergeMochaConfigs;

@@ -1,10 +1,10 @@
 // Copyright IBM Corp. 2018,2020. All Rights Reserved.
-// Node module: loopback-next
+// Node module: artlab-commons
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
 /**
- * This is an internal script to list lerna packages for loopback-next.
+ * This is an internal script to list lerna packages for artlab-commons.
  * See https://github.com/marionebl/commitlint/pull/406
  */
 'use strict';

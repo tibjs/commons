@@ -17,7 +17,7 @@ Where <target> is one of es2015, es2017 or es2018.
 
 'use strict';
 
-const debug = require('debug')('loopback:build');
+const debug = require('debug')('artlab:build');
 const utils = require('./utils');
 const path = require('path');
 const fs = require('fs');

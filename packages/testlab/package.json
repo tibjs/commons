@@ -9,10 +9,10 @@
   },
   "scripts": {
     "build": "al-tsc",
-    "clean": "al-clean loopback-testlab*.tgz dist *.tsbuildinfo package",
+    "clean": "al-clean artlab-testlab*.tgz dist *.tsbuildinfo package",
     "pretest": "npm run build",
     "test": "al-mocha \"dist/__tests__/**/*.js\"",
-    "verify": "npm pack && tar xf loopback-testlab*.tgz && tree package && npm run clean"
+    "verify": "npm pack && tar xf artlab-testlab*.tgz && tree package && npm run clean"
   },
   "author": "IBM Corp.",
   "copyright.owner": "IBM Corp.",

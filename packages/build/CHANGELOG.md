@@ -1083,18 +1083,18 @@ userland Promise instance to a native Promise via
 
 
 <a name="4.0.0-alpha.7"></a>
-# [4.0.0-alpha.7](https://github.com/artlab/loopback4-build/compare/@artlab/build@4.0.0-alpha.6...@artlab/build@4.0.0-alpha.7) (2017-12-11)
+# [4.0.0-alpha.7](https://github.com/artlab/artlab-build/compare/@artlab/build@4.0.0-alpha.6...@artlab/build@4.0.0-alpha.7) (2017-12-11)
 
 
 ### Bug Fixes
 
-* Fix node module names in source code headers ([0316f28](https://github.com/artlab/loopback4-build/commit/0316f28))
+* Fix node module names in source code headers ([0316f28](https://github.com/artlab/artlab-build/commit/0316f28))
 
 
 
 
 <a name="4.0.0-alpha.6"></a>
-# [4.0.0-alpha.6](https://github.com/artlab/loopback4-build/compare/@artlab/build@4.0.0-alpha.5...@artlab/build@4.0.0-alpha.6) (2017-11-29)
+# [4.0.0-alpha.6](https://github.com/artlab/artlab-build/compare/@artlab/build@4.0.0-alpha.5...@artlab/build@4.0.0-alpha.6) (2017-11-29)
 
 
 
@@ -1102,7 +1102,7 @@ userland Promise instance to a native Promise via
 **Note:** Version bump only for package @artlab/build
 
 <a name="4.0.0-alpha.5"></a>
-# [4.0.0-alpha.5](https://github.com/artlab/loopback4-build/compare/@artlab/build@4.0.0-alpha.4...@artlab/build@4.0.0-alpha.5) (2017-11-09)
+# [4.0.0-alpha.5](https://github.com/artlab/artlab-build/compare/@artlab/build@4.0.0-alpha.4...@artlab/build@4.0.0-alpha.5) (2017-11-09)
 
 
 
@@ -1110,7 +1110,7 @@ userland Promise instance to a native Promise via
 **Note:** Version bump only for package @artlab/build
 
 <a name="4.0.0-alpha.4"></a>
-# [4.0.0-alpha.4](https://github.com/artlab/loopback4-build/compare/@artlab/build@4.0.0-alpha.3...@artlab/build@4.0.0-alpha.4) (2017-11-06)
+# [4.0.0-alpha.4](https://github.com/artlab/artlab-build/compare/@artlab/build@4.0.0-alpha.3...@artlab/build@4.0.0-alpha.4) (2017-11-06)
 
 
 
@@ -1118,7 +1118,7 @@ userland Promise instance to a native Promise via
 **Note:** Version bump only for package @artlab/build
 
 <a name="4.0.0-alpha.3"></a>
-# [4.0.0-alpha.3](https://github.com/artlab/loopback4-build/compare/@artlab/build@4.0.0-alpha.2...@artlab/build@4.0.0-alpha.3) (2017-10-31)
+# [4.0.0-alpha.3](https://github.com/artlab/artlab-build/compare/@artlab/build@4.0.0-alpha.2...@artlab/build@4.0.0-alpha.3) (2017-10-31)
 
 
 
@@ -1131,4 +1131,4 @@ userland Promise instance to a native Promise via
 
 ### Features
 
-* Add build scripts as a separate package ([6eacee7](https://github.com/artlab/loopback4-build/commit/6eacee7))
+* Add build scripts as a separate package ([6eacee7](https://github.com/artlab/artlab-build/commit/6eacee7))

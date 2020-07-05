@@ -64,7 +64,7 @@ module.exports = {
     'no-return-await': 'error',
 
     /**
-     * Rules imported from eslint-config-loopback
+     * Rules imported from eslint-config-artlab
      */
     'mocha/handle-done-callback': 'error',
     'mocha/no-exclusive-tests': 'error',

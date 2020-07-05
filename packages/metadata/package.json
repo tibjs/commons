@@ -10,11 +10,11 @@
   "scripts": {
     "acceptance": "al-mocha \"dist/__tests__/acceptance/**/*.js\"",
     "build": "al-tsc",
-    "clean": "al-clean loopback-metadata*.tgz dist *.tsbuildinfo package",
+    "clean": "al-clean artlab-metadata*.tgz dist *.tsbuildinfo package",
     "pretest": "npm run build",
     "test": "al-mocha \"dist/__tests__/**/*.js\"",
     "unit": "al-mocha \"dist/__tests__/unit/**/*.js\"",
-    "verify": "npm pack && tar xf loopback-metadata*.tgz && tree package && npm run clean"
+    "verify": "npm pack && tar xf artlab-metadata*.tgz && tree package && npm run clean"
   },
   "author": "IBM Corp.",
   "copyright.owner": "IBM Corp.",

@@ -38,7 +38,7 @@ export interface InspectionOptions {
  */
 export class MetadataInspector {
   /**
-   * Expose Reflector, which is a wrapper of `Reflect` and it uses `loopback`
+   * Expose Reflector, which is a wrapper of `Reflect` and it uses `artlab`
    * as the namespace prefix for all metadata keys
    */
   static readonly Reflector = Reflector;

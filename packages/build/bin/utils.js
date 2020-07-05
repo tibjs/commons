@@ -9,7 +9,7 @@ const util = require('util');
 const fs = require('fs');
 const path = require('path');
 const spawn = require('cross-spawn');
-const debug = require('debug')('loopback:build');
+const debug = require('debug')('artlab:build');
 
 /**
  * Get the root directory of this module

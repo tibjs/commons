@@ -398,7 +398,7 @@ describe('Reflect Context', () => {
         'baseMethod',
       );
       reflectContext.defineMetadata(
-        'abc:loopback:key7',
+        'abc:artlab:key7',
         metadataValue,
         BaseClass.prototype,
         'baseMethod',
@@ -423,13 +423,13 @@ describe('Reflect Context', () => {
       expect(keys).to.eql(['key6']);
 
       keys = reflectContext.getMetadataKeys(SubClass.prototype, 'baseMethod');
-      expect(keys).to.eql(['key6', 'abc:loopback:key7']);
+      expect(keys).to.eql(['key6', 'abc:artlab:key7']);
 
       keys = reflectContext.getOwnMetadataKeys(
         BaseClass.prototype,
         'baseMethod',
       );
-      expect(keys).to.eql(['abc:loopback:key7']);
+      expect(keys).to.eql(['abc:artlab:key7']);
     });
 
     it('checks hasMetadata against a class', () => {

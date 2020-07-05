@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 // Copyright IBM Corp. 2018,2020. All Rights Reserved.
-// Node module: loopback-next
+// Node module: artlab-commons
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
 /**
  * This is an internal script to run `lerna` command with enviornment variable
- * `LERNA_ROOT_PATH` set to the root directory of `loopback-next` monorepo
+ * `LERNA_ROOT_PATH` set to the root directory of `artlab-commons` monorepo
  */
 'use strict';
 

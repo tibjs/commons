@@ -7,7 +7,7 @@ import debugModule from 'debug';
 import _ from 'lodash';
 import {Reflector} from './reflect';
 import {DecoratorType, MetadataKey, MetadataMap} from './types';
-const debug = debugModule('loopback:metadata:decorator');
+const debug = debugModule('artlab:metadata:decorator');
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 

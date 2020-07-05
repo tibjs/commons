@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copyright IBM Corp. 2020. All Rights Reserved.
-// Node module: loopback-next
+// Node module: artlab-commons
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -37,7 +37,7 @@ async function main() {
 
   console.log(`Checking out pull request #${prNum}...`);
 
-  const url = `https://api.github.com/repos/strongloop/loopback-next/pulls/${prNum}`;
+  const url = `https://api.github.com/repos/artlab/artlab-commons/pulls/${prNum}`;
 
   const result = await getPRInfo(url);
   const headUrl = result.head.repo.ssh_url;

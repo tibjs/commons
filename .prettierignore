@@ -2,7 +2,7 @@
 /coverage
 /docs/apidocs
 /docs/site/apidocs
-/docs/_loopback.io/
+/docs/_artlab.io/
 /docs/_preview/
 packages/cli/generators/*/templates
 packages/cli/snapshots/

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copyright IBM Corp. 2020. All Rights Reserved.
-// Node module: loopback-next
+// Node module: artlab-commons
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -143,7 +143,7 @@ async function checkPkgsPackageJson(packages, rootPkg) {
       pkg.repository &&
       pkg.repository.url &&
       pkg.repository.url.includes(
-        'https://github.com/strongloop/loopback-next.git',
+        'https://github.com/artlab/artlab-commons.git',
       );
 
     if (!isCorrectRepositoryUrl) {
@@ -174,7 +174,7 @@ function formatErrorsText(errors) {
   const errorPackages = errors.map(error => `- ${error}`).join('\n');
 
   return [
-    'Some of the packages are not following loopback-next guidelines:',
+    'Some of the packages are not following artlab-commons guidelines:',
     '',
     errorPackages,
     '',

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copyright IBM Corp. 2019,2020. All Rights Reserved.
-// Node module: loopback-next
+// Node module: artlab-commons
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -75,13 +75,13 @@ async function syncDevDeps() {
 function updatePackageJson(pkgFile, masterDeps) {
   const data = readPackageJson(pkgFile);
   const isExample = data.name.startsWith('@artlab/example-');
-  const isRoot = data.name === 'loopback-next';
+  const isRoot = data.name === 'artlab-commons';
 
   let modified = false;
   for (const dep in masterDeps) {
     if (
       data.devDependencies &&
-      // Force update for examples and loopback-next
+      // Force update for examples and artlab-commons
       (isExample || isRoot || dep in data.devDependencies)
     ) {
       modified = modified || data.devDependencies[dep] !== masterDeps[dep];

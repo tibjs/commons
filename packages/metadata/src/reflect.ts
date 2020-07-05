@@ -190,4 +190,4 @@ export class NamespacedReflect {
   }
 }
 
-export const Reflector = new NamespacedReflect('loopback');
+export const Reflector = new NamespacedReflect('artlab');
