@@ -6,7 +6,7 @@
     "url": "https://github.com/artlab/artlab-commons.git",
     "directory": "packages/build"
   },
-  "version": "6.2.0",
+  "version": "6.2.1",
   "engines": {
     "node": ">=10.16"
   },
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@artlab/eslint-config": "^8.1.0",
+    "@artlab/eslint-config": "^8.1.1",
     "@types/mocha": "^7.0.2",
     "@types/node": "^14.0.14",
     "cross-spawn": "^7.0.3",
