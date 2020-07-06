@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.2](https://github.com/artlab/commons/compare/@artlab/build@6.2.1...@artlab/build@6.2.2) (2020-07-06)
+
+**Note:** Version bump only for package @artlab/build
+
+
+
+
+
 ## [6.2.1](https://github.com/artlab/commons/compare/@artlab/build@6.2.0...@artlab/build@6.2.1) (2020-07-05)
 
 **Note:** Version bump only for package @artlab/build
