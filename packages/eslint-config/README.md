@@ -35,13 +35,12 @@ the [peerDependencies](package.json) of this module should be added to
 
 ## Contributions
 
-- [Guidelines](https://github.com/artlab/artlab-commons/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/artlab/artlab-commons/issues/110)
+- [Guidelines](https://github.com/artlab/commons/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/artlab/commons/issues/110)
 
 ## Contributors
 
-See
-[all contributors](https://github.com/artlab/artlab-commons/graphs/contributors).
+See [all contributors](https://github.com/artlab/commons/graphs/contributors).
 
 ## License
 

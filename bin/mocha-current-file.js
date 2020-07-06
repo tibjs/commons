@@ -1,9 +1,4 @@
 #!/usr/bin/env node
-// Copyright IBM Corp. 2020. All Rights Reserved.
-// Node module: artlab-commons
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 /*
 ================================================================================
 This is used in the launch.json to enable you to debug a test file written in

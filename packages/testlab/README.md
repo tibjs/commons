@@ -457,8 +457,8 @@ For more info about `supertest`, please refer to
 
 ## Contributions
 
-- [Guidelines](https://github.com/artlab/artlab-commons/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/artlab/artlab-commons/issues/110)
+- [Guidelines](https://github.com/artlab/commons/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/artlab/commons/issues/110)
 
 ## Tests
 
@@ -466,8 +466,7 @@ Run `npm test` from the root folder.
 
 ## Contributors
 
-See
-[all contributors](https://github.com/artlab/artlab-commons/graphs/contributors).
+See [all contributors](https://github.com/artlab/commons/graphs/contributors).
 
 ## License
 

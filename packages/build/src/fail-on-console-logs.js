@@ -61,7 +61,7 @@ process.on('exit', code => {
   log(
     '\n=== ATTENTION - INVALID USAGE OF CONSOLE LOGS DETECTED ===',
     '\nLearn more at',
-    'https://github.com/artlab/artlab-commons/blob/master/packages/build/README.md#a-note-on-console-logs-printed-by-tests\n',
+    'https://github.com/artlab/commons/blob/master/packages/build/README.md#a-note-on-console-logs-printed-by-tests\n',
   );
 
   for (const p of problems) {

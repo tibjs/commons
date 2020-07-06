@@ -1,9 +1,4 @@
 #!/usr/bin/env node
-// Copyright IBM Corp. 2020. All Rights Reserved.
-// Node module: artlab-commons
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 /**
  * This is an internal script to update docs/site MONOREPO.md file with filling
  * up all packages with lexicographical order
@@ -35,7 +30,7 @@ function getPackageFields(pkg) {
   const packageJson = fs.readJsonSync(path.join(pkg.location, 'package.json'));
 
   const relativeUri = getPackageRelativeUri(pkg);
-  const pkgUrl = `https://github.com/artlab/artlab-commons/tree/master/${relativeUri}`;
+  const pkgUrl = `https://github.com/artlab/commons/tree/master/${relativeUri}`;
 
   return [
     `[${relativeUri}](${pkgUrl})`,
@@ -61,7 +56,7 @@ async function updateMonorepoFile() {
     '',
     '# Monorepo overview',
     '',
-    'The [artlab-commons](https://github.com/artlab/artlab-commons) repository uses',
+    'The [commons](https://github.com/artlab/commons) repository uses',
     '[lerna](https://lernajs.io/) to manage multiple packages for LoopBack 4.',
     '',
     'Please run the following command to update packages information after adding new',
@@ -70,7 +65,7 @@ async function updateMonorepoFile() {
     markdownTable,
     '',
     'We use npm scripts declared in',
-    '[package.json](https://github.com/artlab/artlab-commons/blob/master/package.json)',
+    '[package.json](https://github.com/artlab/commons/blob/master/package.json)',
     'to work with the monorepo managed by lerna. See',
     '[Developing LoopBack](./DEVELOPING.md) for more details.',
   ].join('\n');

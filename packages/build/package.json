@@ -3,7 +3,7 @@
   "description": "A set of common scripts and default configurations to build LoopBack 4 or other TypeScript modules",
   "repository": {
     "type": "git",
-    "url": "https://github.com/artlab/artlab-commons.git",
+    "url": "https://github.com/artlab/commons.git",
     "directory": "packages/build"
   },
   "version": "6.2.1",

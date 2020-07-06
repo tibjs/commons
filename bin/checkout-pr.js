@@ -1,9 +1,4 @@
 #!/usr/bin/env node
-// Copyright IBM Corp. 2020. All Rights Reserved.
-// Node module: artlab-commons
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 /*
  * This is an internal script for LoopBack maintainers to check out a forked
  * repo/branch for a given pull request
@@ -37,7 +32,7 @@ async function main() {
 
   console.log(`Checking out pull request #${prNum}...`);
 
-  const url = `https://api.github.com/repos/artlab/artlab-commons/pulls/${prNum}`;
+  const url = `https://api.github.com/repos/artlab/commons/pulls/${prNum}`;
 
   const result = await getPRInfo(url);
   const headUrl = result.head.repo.ssh_url;

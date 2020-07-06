@@ -1,9 +1,4 @@
 #!/usr/bin/env node
-// Copyright IBM Corp. 2020. All Rights Reserved.
-// Node module: artlab-commons
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 /**
  * This is an internal script that will verify that all packages in our monorepo
  * are registered in all required places and have the expected metadata in their
@@ -142,9 +137,7 @@ async function checkPkgsPackageJson(packages, rootPkg) {
     const isCorrectRepositoryUrl =
       pkg.repository &&
       pkg.repository.url &&
-      pkg.repository.url.includes(
-        'https://github.com/artlab/artlab-commons.git',
-      );
+      pkg.repository.url.includes('https://github.com/artlab/commons.git');
 
     if (!isCorrectRepositoryUrl) {
       errors.push(getErrorText(p.name, 'repository.url'));
@@ -174,7 +167,7 @@ function formatErrorsText(errors) {
   const errorPackages = errors.map(error => `- ${error}`).join('\n');
 
   return [
-    'Some of the packages are not following artlab-commons guidelines:',
+    'Some of the packages are not following commons guidelines:',
     '',
     errorPackages,
     '',

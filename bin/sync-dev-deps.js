@@ -1,8 +1,4 @@
 #!/usr/bin/env node
-// Copyright IBM Corp. 2019,2020. All Rights Reserved.
-// Node module: artlab-commons
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
 
 /**
  * This is an internal script to synchronize versions of dev-dependencies
@@ -75,13 +71,13 @@ async function syncDevDeps() {
 function updatePackageJson(pkgFile, masterDeps) {
   const data = readPackageJson(pkgFile);
   const isExample = data.name.startsWith('@artlab/example-');
-  const isRoot = data.name === 'artlab-commons';
+  const isRoot = data.name === 'commons';
 
   let modified = false;
   for (const dep in masterDeps) {
     if (
       data.devDependencies &&
-      // Force update for examples and artlab-commons
+      // Force update for examples and commons
       (isExample || isRoot || dep in data.devDependencies)
     ) {
       modified = modified || data.devDependencies[dep] !== masterDeps[dep];

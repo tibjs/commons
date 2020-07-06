@@ -1,9 +1,4 @@
 #!/usr/bin/env node
-// Copyright IBM Corp. 2020. All Rights Reserved.
-// Node module: artlab-commons
-// This file is licensed under the MIT License.
-// License text available at https://opensource.org/licenses/MIT
-
 /**
  * This is an internal script to update TypeScript project references based on
  * lerna's local package dependencies.

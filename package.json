@@ -2,7 +2,7 @@
   "name": "artlab-commons",
   "repository": {
     "type": "git",
-    "url": "https://github.com/artlab/artlab-commons.git"
+    "url": "https://github.com/artlab/commons.git"
   },
   "version": "0.1.0",
   "engines": {
