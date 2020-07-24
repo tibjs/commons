@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 3.4.0 (2020-07-24)
+
+
+### Features
+
+* initial commit ([d2d3042](https://github.com/tibjs/commons/commit/d2d3042c9282625e4f5e8006d391d1c4ac42fc7d))
+* rename ArtLab to Tib ([1373483](https://github.com/tibjs/commons/commit/1373483d3294162f9aa827a5e158b8a529d32338))
+
+
+
+
+
 ## [3.3.3](https://github.com/tibjs/commons/compare/@tib/testlab@3.3.2...@tib/testlab@3.3.3) (2020-07-09)
 
 **Note:** Version bump only for package @tib/testlab
