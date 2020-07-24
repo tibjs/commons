@@ -15,7 +15,7 @@
       "forceLocal": true
     },
     "version": {
-      "forcePublish": "@artlab/cli,@artlab/docs",
+      "forcePublish": "@tib/cli,@tib/docs",
       "conventionalCommits": true,
       "message": "chore: publish release"
     },

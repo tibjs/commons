@@ -1,4 +1,4 @@
-# @artlab/metadata
+# @tib/metadata
 
 This module contains utilities to help developers implement
 [TypeScript decorators](https://www.typescriptlang.org/docs/handbook/decorators.html),
@@ -17,7 +17,7 @@ define/merge metadata, and inspect metadata.
 ### To create a class decorator
 
 ```ts
-import {ClassDecoratorFactory} from '@artlab/metadata';
+import {ClassDecoratorFactory} from '@tib/metadata';
 
 export interface MyClassMetadata {
   name: string;
@@ -55,7 +55,7 @@ class MyController {}
 ### To create a method decorator
 
 ```ts
-import {MethodDecoratorFactory} from '@artlab/metadata';
+import {MethodDecoratorFactory} from '@tib/metadata';
 
 export interface MyMethodMetadata {
   name: string;
@@ -94,7 +94,7 @@ Instead of a single immutable object to be merged, the
 When fetching the metadata later, you will receive it as an array.
 
 ```ts
-import {MethodMultiDecoratorFactory} from '@artlab/metadata';
+import {MethodMultiDecoratorFactory} from '@tib/metadata';
 
 function myMultiMethodDecorator(spec: object): MethodDecorator {
   return MethodMultiDecoratorFactory.createDecorator<object>(
@@ -198,7 +198,7 @@ const arrayOfSpecs = MetadataInspector.getMethodMetadata<GeometryMetadata>(
 ### To create a property decorator
 
 ```ts
-import {PropertyDecoratorFactory} from '@artlab/metadata';
+import {PropertyDecoratorFactory} from '@tib/metadata';
 
 export interface MyPropertyMetadata {
   name: string;
@@ -231,7 +231,7 @@ class MyController {
 ### To create a parameter decorator
 
 ```ts
-import {ParameterDecoratorFactory} from '@artlab/metadata';
+import {ParameterDecoratorFactory} from '@tib/metadata';
 
 export interface MyParameterMetadata {
   name: string;
@@ -271,7 +271,7 @@ class MyController {
 ### To create method decorator for parameters
 
 ```ts
-import {MethodParameterDecoratorFactory} from '@artlab/metadata';
+import {MethodParameterDecoratorFactory} from '@tib/metadata';
 
 export interface MyParameterMetadata {
   name: string;
@@ -434,7 +434,7 @@ members.
 ### Inspect metadata of a class
 
 ```ts
-import {MetadataInspector} from '@artlab/metadata';
+import {MetadataInspector} from '@tib/metadata';
 
 const meta = MetadataInspector.getClassMetadata(
   'my-class-decorator-key',
@@ -445,7 +445,7 @@ const meta = MetadataInspector.getClassMetadata(
 ### Inspect own metadata of a class
 
 ```ts
-import {MetadataInspector} from '@artlab/metadata';
+import {MetadataInspector} from '@tib/metadata';
 
 const meta = MetadataInspector.getClassMetadata<MyClassMetaData>(
   'my-class-decorator-key',
@@ -459,7 +459,7 @@ const meta = MetadataInspector.getClassMetadata<MyClassMetaData>(
 ### Inspect metadata of a method
 
 ```ts
-import {MetadataInspector} from '@artlab/metadata';
+import {MetadataInspector} from '@tib/metadata';
 
 const allMethods = MetadataInspector.getAllMethodMetaData<MyMethodMetadata>(
   'my-method-decorator-key',
@@ -476,7 +476,7 @@ const myMethod = MetadataInspector.getMethodMetaData<MyMethodMetadata>(
 ### Inspect metadata of a property
 
 ```ts
-import {MetadataInspector} from '@artlab/metadata';
+import {MetadataInspector} from '@tib/metadata';
 
 const allProps = MetadataInspector.getAllPropertyMetaData<MyPropertyMetadata>(
   'my-property-decorator-key',
@@ -493,7 +493,7 @@ const myProp = MetadataInspector.getMethodMetaData<MyMethodMetadata>(
 ### Inspect metadata of method parameters
 
 ```ts
-import {MetadataInspector} from '@artlab/metadata';
+import {MetadataInspector} from '@tib/metadata';
 
 const allParamsForMyMethod = MetadataInspector.getAllParameterMetaData<
   MyParameterMetadata
@@ -539,7 +539,7 @@ Please note MetadataKey can be an instance of MetadataAccessor or a string.
 ### Inspect design-time metadata of properties/methods
 
 ```ts
-import {MetadataInspector} from '@artlab/metadata';
+import {MetadataInspector} from '@tib/metadata';
 
 const myPropType = MetadataInspector.getDesignTypeForProperty(
   MyController.prototype,
@@ -560,13 +560,13 @@ const myMethod = MetadataInspector.getDesignTypeForMethod(
 ## Installation
 
 ```sh
-npm install --save @artlab/metadata
+npm install --save @tib/metadata
 ```
 
 ## Contributions
 
-- [Guidelines](https://github.com/artlab/commons/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/artlab/commons/issues/110)
+- [Guidelines](https://github.com/tibjs/commons/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/tibjs/commons/issues/110)
 
 ## Tests
 
@@ -574,7 +574,7 @@ Run `npm test` from the root folder.
 
 ## Contributors
 
-See [all contributors](https://github.com/artlab/commons/graphs/contributors).
+See [all contributors](https://github.com/tibjs/commons/graphs/contributors).
 
 ## License
 

@@ -1,5 +1,5 @@
 // Copyright IBM Corp. 2017,2020. All Rights Reserved.
-// Node module: @artlab/metadata
+// Node module: @tib/metadata
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -7,7 +7,7 @@ import debugModule from 'debug';
 import _ from 'lodash';
 import {Reflector} from './reflect';
 import {DecoratorType, MetadataKey, MetadataMap} from './types';
-const debug = debugModule('artlab:metadata:decorator');
+const debug = debugModule('tib:metadata:decorator');
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 

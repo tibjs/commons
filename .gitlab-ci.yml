@@ -27,7 +27,7 @@ test:
 # store and publish code coverage HTML report folder
 # https://about.gitlab.com/blog/2016/11/03/publish-code-coverage-report-with-gitlab-pages/
 # the coverage report will be available both as a job artifact
-# and at https://artlab.gitr.io/commons/
+# and at https://tib.gitr.io/commons/
 pages:
   stage: deploy
   dependencies:

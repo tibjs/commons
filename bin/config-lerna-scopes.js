@@ -20,13 +20,13 @@ async function getPackageNames(context) {
   const packages = await getPackages(cwd);
 
   // Get a list of names. Npm scopes will be removed, for example,
-  // @artlab/core -> core
+  // @tib/core -> core
   return packages.map(getShortName);
 }
 
 /**
  * Get short name of a package. The NPM scope will be removed if it exists.
- * For example, the short name of `@artlab/core` is `core`.
+ * For example, the short name of `@tib/core` is `core`.
  * @param {Package} pkg - Lerna project
  */
 function getShortName(pkg) {

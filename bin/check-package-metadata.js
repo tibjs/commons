@@ -59,7 +59,7 @@ async function checkMonorepoFile(packages, rootPath) {
  */
 async function checkCodeOwnersFile(packages, rootPath) {
   const errors = [];
-  const excludes = ['@artlab/sandbox-example'];
+  const excludes = ['@tib/sandbox-example'];
 
   const codeOwnersFile = await fs.readFile('CODEOWNERS', 'utf8');
 
@@ -137,7 +137,7 @@ async function checkPkgsPackageJson(packages, rootPkg) {
     const isCorrectRepositoryUrl =
       pkg.repository &&
       pkg.repository.url &&
-      pkg.repository.url.includes('https://github.com/artlab/commons.git');
+      pkg.repository.url.includes('https://github.com/tibjs/commons.git');
 
     if (!isCorrectRepositoryUrl) {
       errors.push(getErrorText(p.name, 'repository.url'));

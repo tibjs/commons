@@ -21,7 +21,7 @@ Test utilities to help writing LoopBack 4 tests:
 ## Installation
 
 ```sh
-npm install --save-dev @artlab/testlab
+npm install --save-dev @tib/testlab
 ```
 
 _This package is typically used in tests, save it to `devDependencies` via
@@ -30,7 +30,7 @@ _This package is typically used in tests, save it to `devDependencies` via
 ## Basic use
 
 ```ts
-import {expect} from '@artlab/testlab';
+import {expect} from '@tib/testlab';
 
 describe('Basic assertions', => {
   it('asserts equal values', => {
@@ -139,7 +139,7 @@ is running and to stop the application after all tests are done.
 Example use:
 
 ```ts
-import {Client, createRestAppClient} from '@artlab/testlab';
+import {Client, createRestAppClient} from '@tib/testlab';
 
 describe('My application', () => {
   app: MyApplication; // extends RestApplication
@@ -167,7 +167,7 @@ required because Travis is not able to handle IPv6 addresses.
 Async wrapper for making HTTP GET requests.
 
 ```ts
-import {httpGetAsync} from '@artlab/testlab';
+import {httpGetAsync} from '@tib/testlab';
 const response = await httpGetAsync('http://example.com');
 ```
 
@@ -176,7 +176,7 @@ const response = await httpGetAsync('http://example.com');
 Async wrapper for making HTTPS GET requests.
 
 ```ts
-import {httpsGetAsync} from '@artlab/testlab';
+import {httpsGetAsync} from '@tib/testlab';
 const response = await httpsGetAsync('https://example.com');
 ```
 
@@ -189,7 +189,7 @@ not. Use this function to convert a model instance into a data object as
 returned by REST API.
 
 ```ts
-import {createClientForHandler, toJSON} from '@artlab/testlab';
+import {createClientForHandler, toJSON} from '@tib/testlab';
 
 it('gets a todo by ID', () => {
   return client
@@ -204,7 +204,7 @@ Use the factory function `stubServerRequest` to create a stub request that can
 be passed to methods expecting core HTTP Request on input.
 
 ```ts
-import {stubServerRequest, expect} from '@artlab/testlab';
+import {stubServerRequest, expect} from '@tib/testlab';
 
 describe('parseParams', () => {
   it('parses query string arguments', () => {
@@ -228,7 +228,7 @@ Use the factory function `stubHandlerContext` to create request & response stubs
 and a promise to observe the actual response as received by clients.
 
 ```ts
-import {stubHandlerContext, expect} from '@artlab/testlab';
+import {stubHandlerContext, expect} from '@tib/testlab';
 
 describe('app REST handler', () => {
   it('returns 404 with JSON body when URL not found', async () => {
@@ -270,7 +270,7 @@ clients.
 If your tested function is expecting a request object only:
 
 ```ts
-import {stubExpressContext, expect} from '@artlab/testlab';
+import {stubExpressContext, expect} from '@tib/testlab';
 
 describe('operationArgsParser', () => {
   it('parses body parameter', async () => {
@@ -300,7 +300,7 @@ Tests verifying code producing HTTP response can await `context.result` to
 receive the response as returned to clients.
 
 ```ts
-import {stubExpressContext, expect} from '@artlab/testlab';
+import {stubExpressContext, expect} from '@tib/testlab';
 
 describe('response writer', () => {
   it('writes object result to response as JSON', async () => {
@@ -320,8 +320,8 @@ describe('response writer', () => {
 Verify that your application API specification is a valid OpenAPI spec document.
 
 ```js
-import {validateApiSpec} from '@artlab/testlab';
-import {RestServer} from '@artlab/rest';
+import {validateApiSpec} from '@tib/testlab';
+import {RestServer} from '@tib/rest';
 
 describe('MyApp', () => {
   it('has valid spec', async () => {
@@ -346,8 +346,8 @@ responses:
   that we have enough information to troubleshoot the failing test.
 
 ```ts
-import {createUnexpectedHttpErrorLogger} from '@artlab/testlab';
-import {RestApplication} from '@artlab/rest';
+import {createUnexpectedHttpErrorLogger} from '@tib/testlab';
+import {RestApplication} from '@tib/rest';
 
 describe('MyApp', () => {
   it('does not log a known 401 error to console', async () => {
@@ -457,8 +457,8 @@ For more info about `supertest`, please refer to
 
 ## Contributions
 
-- [Guidelines](https://github.com/artlab/commons/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/artlab/commons/issues/110)
+- [Guidelines](https://github.com/tibjs/commons/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/tibjs/commons/issues/110)
 
 ## Tests
 
@@ -466,7 +466,7 @@ Run `npm test` from the root folder.
 
 ## Contributors
 
-See [all contributors](https://github.com/artlab/commons/graphs/contributors).
+See [all contributors](https://github.com/tibjs/commons/graphs/contributors).
 
 ## License
 

@@ -1,11 +1,11 @@
 // Copyright IBM Corp. 2017,2020. All Rights Reserved.
-// Node module: @artlab/build
+// Node module: @tib/build
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
 'use strict';
 
-const debug = require('debug')('artlab:build:merge-mocha-configs');
+const debug = require('debug')('tib:build:merge-mocha-configs');
 const {assignWith} = require('lodash');
 
 module.exports = mergeMochaConfigs;

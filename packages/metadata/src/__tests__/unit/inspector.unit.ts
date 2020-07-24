@@ -1,9 +1,9 @@
 // Copyright IBM Corp. 2019,2020. All Rights Reserved.
-// Node module: @artlab/metadata
+// Node module: @tib/metadata
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-import {expect} from '@artlab/testlab';
+import {expect} from '@tib/testlab';
 import {
   ClassDecoratorFactory,
   PropertyDecoratorFactory,

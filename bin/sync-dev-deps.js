@@ -50,7 +50,7 @@ async function syncDevDeps() {
 
   // Update typescript & eslint dependencies in individual packages
   for (const pkg of packages) {
-    if (pkg.name === '@artlab/eslint-config') continue;
+    if (pkg.name === '@tib/eslint-config') continue;
     const pkgFile = pkg.manifestLocation;
     updatePackageJson(pkgFile, {
       eslint: masterDeps.eslint,
@@ -70,7 +70,7 @@ async function syncDevDeps() {
  */
 function updatePackageJson(pkgFile, masterDeps) {
   const data = readPackageJson(pkgFile);
-  const isExample = data.name.startsWith('@artlab/example-');
+  const isExample = data.name.startsWith('@tib/example-');
   const isRoot = data.name === 'commons';
 
   let modified = false;

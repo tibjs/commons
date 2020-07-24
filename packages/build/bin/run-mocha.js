@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copyright IBM Corp. 2018,2020. All Rights Reserved.
-// Node module: @artlab/build
+// Node module: @tib/build
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -33,7 +33,7 @@ function run(argv, options) {
   if (typeof options === 'boolean') options = {dryRun: options};
   options = options || {};
   if (setMochaOpts) {
-    // Use the default `.mocharc.json` from `@artlab/build`
+    // Use the default `.mocharc.json` from `@tib/build`
     const mochaOptsFile = utils.getConfigFile('.mocharc.json');
     mochaOpts.unshift('--config', mochaOptsFile);
   }

@@ -1,5 +1,5 @@
 // Copyright IBM Corp. 2019,2020. All Rights Reserved.
-// Node module: @artlab/eslint-config
+// Node module: @tib/eslint-config
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -64,7 +64,7 @@ module.exports = {
     'no-return-await': 'error',
 
     /**
-     * Rules imported from eslint-config-artlab
+     * Rules imported from eslint-config-tib
      */
     'mocha/handle-done-callback': 'error',
     'mocha/no-exclusive-tests': 'error',
@@ -100,7 +100,7 @@ module.exports = {
      * The following rules are enforced to support legacy tslint configuration
      */
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/ROADMAP.md
-    // Rules mapped from `@artlab/tslint-config/tslint.common.json
+    // Rules mapped from `@tib/tslint-config/tslint.common.json
     '@typescript-eslint/adjacent-overload-signatures': 'error', // tslint:adjacent-overload-signatures
     '@typescript-eslint/prefer-for-of': 'error', // tslint:prefer-for-of
     '@typescript-eslint/unified-signatures': 'error', // tslint:unified-signatures
@@ -130,7 +130,7 @@ module.exports = {
          *
          * @example
          * ```ts
-         * import {inject} from '@artlab/core';
+         * import {inject} from '@tib/core';
          * class MyController {
          *   constructor(@inject('foo') foo: string) {}
          * }
@@ -144,7 +144,7 @@ module.exports = {
     'no-var': 'error', // tslint:no-var-keyword
     eqeqeq: ['error', 'smart'], // tslint:triple-equals: [true, 'allow-null-check', 'allow-undefined-check'],
 
-    // Rules mapped from `@artlab/tslint-config/tslint.build.json
+    // Rules mapped from `@tib/tslint-config/tslint.build.json
     '@typescript-eslint/await-thenable': 'error', // tslint:await-promise: [true, 'PromiseLike', 'RequestPromise'],
     '@typescript-eslint/no-floating-promises': 'error',
 

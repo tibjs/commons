@@ -9,7 +9,7 @@
 
 const path = require('path');
 const fs = require('fs-extra');
-const debug = require('debug')('artlab:build');
+const debug = require('debug')('tib:build');
 
 const Project = require('@lerna/project');
 const PackageGraph = require('@lerna/package-graph');
@@ -82,7 +82,7 @@ async function updateReferences(options) {
       composite: true,
     };
 
-    if (!tsconfig.include || p.name.startsWith('@artlab/example-')) {
+    if (!tsconfig.include || p.name.startsWith('@tib/example-')) {
       // To include ts/json files
       tsconfig.include = ['src/**/*', 'src/**/*.json'];
     }

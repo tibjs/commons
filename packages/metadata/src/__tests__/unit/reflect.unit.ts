@@ -1,9 +1,9 @@
 // Copyright IBM Corp. 2019. All Rights Reserved.
-// Node module: @artlab/metadata
+// Node module: @tib/metadata
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-import {expect} from '@artlab/testlab';
+import {expect} from '@tib/testlab';
 import {NamespacedReflect, Reflector} from '../../reflect';
 import 'reflect-metadata';
 
@@ -398,7 +398,7 @@ describe('Reflect Context', () => {
         'baseMethod',
       );
       reflectContext.defineMetadata(
-        'abc:artlab:key7',
+        'abc:tib:key7',
         metadataValue,
         BaseClass.prototype,
         'baseMethod',
@@ -423,13 +423,13 @@ describe('Reflect Context', () => {
       expect(keys).to.eql(['key6']);
 
       keys = reflectContext.getMetadataKeys(SubClass.prototype, 'baseMethod');
-      expect(keys).to.eql(['key6', 'abc:artlab:key7']);
+      expect(keys).to.eql(['key6', 'abc:tib:key7']);
 
       keys = reflectContext.getOwnMetadataKeys(
         BaseClass.prototype,
         'baseMethod',
       );
-      expect(keys).to.eql(['abc:artlab:key7']);
+      expect(keys).to.eql(['abc:tib:key7']);
     });
 
     it('checks hasMetadata against a class', () => {

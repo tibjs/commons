@@ -32,7 +32,7 @@ async function main() {
 
   console.log(`Checking out pull request #${prNum}...`);
 
-  const url = `https://api.github.com/repos/artlab/commons/pulls/${prNum}`;
+  const url = `https://api.github.com/repos/tib/commons/pulls/${prNum}`;
 
   const result = await getPRInfo(url);
   const headUrl = result.head.repo.ssh_url;

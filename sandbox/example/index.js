@@ -1,5 +1,5 @@
 // Copyright IBM Corp. 2018,2020. All Rights Reserved.
-// Node module: @artlab/sandbox-example
+// Node module: @tib/sandbox-example
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 

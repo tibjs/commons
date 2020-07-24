@@ -1,5 +1,5 @@
 // Copyright IBM Corp. 2018,2020. All Rights Reserved.
-// Node module: @artlab/build
+// Node module: @tib/build
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -61,7 +61,7 @@ process.on('exit', code => {
   log(
     '\n=== ATTENTION - INVALID USAGE OF CONSOLE LOGS DETECTED ===',
     '\nLearn more at',
-    'https://github.com/artlab/commons/blob/master/packages/build/README.md#a-note-on-console-logs-printed-by-tests\n',
+    'https://github.com/tibjs/commons/blob/master/packages/build/README.md#a-note-on-console-logs-printed-by-tests\n',
   );
 
   for (const p of problems) {

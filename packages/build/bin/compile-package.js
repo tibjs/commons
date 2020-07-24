@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copyright IBM Corp. 2017,2020. All Rights Reserved.
-// Node module: @artlab/build
+// Node module: @tib/build
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -17,7 +17,7 @@ Where <target> is one of es2015, es2017 or es2018.
 
 'use strict';
 
-const debug = require('debug')('artlab:build');
+const debug = require('debug')('tib:build');
 const utils = require('./utils');
 const path = require('path');
 const fs = require('fs');

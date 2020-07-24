@@ -1,5 +1,5 @@
 // Copyright IBM Corp. 2019,2020. All Rights Reserved.
-// Node module: @artlab/build
+// Node module: @tib/build
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -15,10 +15,7 @@ describe('Build utils', () => {
     });
 
     it('supports scoped packages', () => {
-      assert.equal(
-        utils.getPackageName('@artlab/cli/bin/cli-main'),
-        '@artlab/cli',
-      );
+      assert.equal(utils.getPackageName('@tib/cli/bin/cli-main'), '@tib/cli');
     });
   });
 });

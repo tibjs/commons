@@ -1,5 +1,5 @@
 // Copyright IBM Corp. 2017,2020. All Rights Reserved.
-// Node module: @artlab/build
+// Node module: @tib/build
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -9,7 +9,7 @@ const util = require('util');
 const fs = require('fs');
 const path = require('path');
 const spawn = require('cross-spawn');
-const debug = require('debug')('artlab:build');
+const debug = require('debug')('tib:build');
 
 /**
  * Get the root directory of this module
@@ -59,7 +59,7 @@ function getConfigFile(name, defaultName) {
  * @param {string} cli CLI module path
  * @param {object} options Options for module resolution
  * - `resolveFromProjectFirst`: Try to resolve the CLI path from the package
- *   dependencies of the current project first instead of `@artlab/build`
+ *   dependencies of the current project first instead of `@tib/build`
  */
 function resolveCLI(cli, options = {resolveFromProjectFirst: true}) {
   const {resolveFromProjectFirst = true} = options;

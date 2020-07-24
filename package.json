@@ -1,25 +1,26 @@
 {
-  "name": "artlab-commons",
+  "name": "tib-commons",
+  "description": "A common ts library provides better ts building, linting, testing and metadata interaction features that extracted from loopback-next",
   "repository": {
     "type": "git",
-    "url": "https://github.com/artlab/commons.git"
+    "url": "https://github.com/tibjs/commons.git"
   },
   "version": "0.1.0",
   "engines": {
     "node": ">=10.16"
   },
-  "author": "ArtLab",
+  "author": "tib",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^9.0.1",
-    "@commitlint/travis-cli": "^9.0.1",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "@commitlint/travis-cli": "^9.1.1",
     "@types/mocha": "^7.0.2",
-    "@typescript-eslint/eslint-plugin": "^3.6.0",
-    "@typescript-eslint/parser": "^3.6.0",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
     "cross-env": "^7.0.2",
     "cz-conventional-changelog": "^3.2.0",
-    "eslint": "^7.4.0",
+    "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-eslint-plugin": "^2.3.0",
     "eslint-plugin-mocha": "^7.0.1",
@@ -28,7 +29,7 @@
     "lerna": "^3.22.1",
     "markdown-table": "^2.0.0",
     "open-cli": "^6.0.1",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -45,7 +46,7 @@
     "sync-dev-deps": "node bin/sync-dev-deps",
     "version": "npm run update-peer-deps",
     "outdated": "npm outdated --depth 0 && lerna exec --no-bail \"npm outdated --depth 0\"",
-    "tsdocs": "lerna run --scope @artlab/tsdocs build:tsdocs",
+    "tsdocs": "lerna run --scope @tib/tsdocs build:tsdocs",
     "coverage:ci": "node packages/build/bin/run-nyc report --reporter=text-summary",
     "precoverage": "npm test",
     "coverage": "open-cli coverage/index.html",

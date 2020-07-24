@@ -38,7 +38,7 @@ jobs:
     - node_js: "12"
       os: linux
       env: TASK=code-lint
-      # Running Code Linter -- Requires @artlab/build so it's bootstrapped
+      # Running Code Linter -- Requires @tib/build so it's bootstrapped
       # We actually need to bootstrap all packages, otherwise typescript-eslint
       # is not able to access type information for dependencies
       script:
@@ -70,7 +70,7 @@ jobs:
       services:
         - mongodb
       script:
-        - lerna bootstrap --scope "@artlab/test-repository-mongodb" --include-dependencies
+        - lerna bootstrap --scope "@tib/test-repository-mongodb" --include-dependencies
         - cd acceptance/repository-mongodb && npm test
 
     - node_js: "12"
@@ -87,7 +87,7 @@ jobs:
         - mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'test'@'localhost' WITH GRANT OPTION;FLUSH PRIVILEGES;"
         - mysql -e "GRANT SUPER ON *.* TO 'test'@'localhost' IDENTIFIED BY 'test';FLUSH PRIVILEGES;"
       script:
-        - lerna bootstrap --scope "@artlab/test-repository-mysql" --include-dependencies
+        - lerna bootstrap --scope "@tib/test-repository-mysql" --include-dependencies
         - cd acceptance/repository-mysql && npm test
 
     - node_js: "12"
@@ -98,7 +98,7 @@ jobs:
       services:
         - postgresql
       script:
-        - lerna bootstrap --scope "@artlab/test-repository-postgresql" --include-dependencies
+        - lerna bootstrap --scope "@tib/test-repository-postgresql" --include-dependencies
         - psql -U postgres -a -f acceptance/repository-postgresql/test/schema.sql
         - cd acceptance/repository-postgresql && npm test
 
@@ -108,7 +108,7 @@ jobs:
         - TASK=test-repository-cloudant
       script:
         # set up docker image and create admin for cloudant.
-        - lerna bootstrap --scope "@artlab/test-repository-cloudant" --include-dependencies
+        - lerna bootstrap --scope "@tib/test-repository-cloudant" --include-dependencies
         - cd acceptance/repository-cloudant && sh setup.sh
         - npm test
 
@@ -119,7 +119,7 @@ jobs:
       services:
         - docker
       script:
-        - lerna bootstrap --scope "@artlab/test-extension-logging-fluentd" --include-dependencies
+        - lerna bootstrap --scope "@tib/test-extension-logging-fluentd" --include-dependencies
         - cd acceptance/extension-logging-fluentd && npm test
 
     - node_js: "12"
@@ -127,5 +127,5 @@ jobs:
       env:
         - TASK=test-benchmark
       script:
-        - lerna bootstrap --scope "@artlab/benchmark" --include-dependencies
+        - lerna bootstrap --scope "@tib/benchmark" --include-dependencies
         - cd benchmark && npm test

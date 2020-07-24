@@ -1,43 +1,43 @@
-# @artlab/build
+# @tib/build
 
 This module contains a set of common scripts and default configurations to build
 LoopBack 4 or other TypeScript modules, including:
 
-- al-tsc: Use
+- tib-tsc: Use
   [`tsc`](https://www.typescriptlang.org/docs/handbook/compiler-options.html) to
   compile typescript files
-- al-eslint: Run [`eslint`](https://typescript-eslint.io/)
-- al-prettier: Run [`prettier`](https://github.com/prettier/prettier)
-- al-mocha: Run [`mocha`](https://mochajs.org/) to execute test cases
-- al-nyc: Run [`nyc`](https://github.com/istanbuljs/nyc)
+- tib-eslint: Run [`eslint`](https://typescript-eslint.io/)
+- tib-prettier: Run [`prettier`](https://github.com/prettier/prettier)
+- tib-mocha: Run [`mocha`](https://mochajs.org/) to execute test cases
+- tib-nyc: Run [`nyc`](https://github.com/istanbuljs/nyc)
 
 These scripts first try to locate the CLI from target project dependencies and
-fall back to bundled ones in `@artlab/build`.
+fall back to bundled ones in `@tib/build`.
 
 ## Basic use
 
-To use `@artlab/build` for your package:
+To use `@tib/build` for your package:
 
-1.  Run the following command to add `@artlab/build` as a dev dependency.
+1.  Run the following command to add `@tib/build` as a dev dependency.
 
-`npm i @artlab/build --save-dev`
+`npm i @tib/build --save-dev`
 
 2.  Configure your project package.json as follows:
 
 ```json
 "scripts": {
-    "build": "al-tsc",
-    "build:watch": "al-tsc --watch",
-    "clean": "al-clean",
+    "build": "tib-tsc",
+    "build:watch": "tib-tsc --watch",
+    "clean": "tib-clean",
     "lint": "npm run prettier:check && npm run eslint",
     "lint:fix": "npm run prettier:fix && npm run eslint:fix",
-    "prettier:cli": "al-prettier \"**/*.ts\" \"**/*.js\"",
+    "prettier:cli": "tib-prettier \"**/*.ts\" \"**/*.js\"",
     "prettier:check": "npm run prettier:cli -- -l",
     "prettier:fix": "npm run prettier:cli -- --write",
-    "eslint": "al-eslint --report-unused-disable-directives .",
+    "eslint": "tib-eslint --report-unused-disable-directives .",
     "eslint:fix": "npm run eslint -- --fix",
     "pretest": "npm run clean && npm run build",
-    "test": "al-mocha \"dist/__tests__\"",
+    "test": "tib-mocha \"dist/__tests__\"",
     "posttest": "npm run lint",
     "start": "npm run build && node .",
     "prepublishOnly": "npm run test"
@@ -55,12 +55,12 @@ Now you run the scripts, such as:
 
 3.  Override default configurations in your project
 
-- al-tsc
+- tib-tsc
 
-  By default, `al-tsc` searches your project's root directory for
+  By default, `tib-tsc` searches your project's root directory for
   `tsconfig.build.json` then `tsconfig.json`. If neither of them exists, a
   `tsconfig.json` will be created to extend from
-  `@artlab/build/config/tsconfig.common.json`.
+  `@tib/build/config/tsconfig.common.json`.
 
   To customize the configuration:
 
@@ -70,7 +70,7 @@ Now you run the scripts, such as:
     ```json
     {
       "$schema": "http://json.schemastore.org/tsconfig",
-      "extends": "@artlab/build/config/tsconfig.common.json",
+      "extends": "@tib/build/config/tsconfig.common.json",
       "compilerOptions": {
         "outDir": "dist",
         "rootDir": "src"
@@ -82,7 +82,7 @@ Now you run the scripts, such as:
   - Set options explicity for the script
 
     ```sh
-    al-tsc -p tsconfig.json --target es2017 --outDir dist
+    tib-tsc -p tsconfig.json --target es2017 --outDir dist
     ```
 
     For more information, see
@@ -102,9 +102,9 @@ npm run build
 
 5.  Run code coverage reports
 
-- `al-nyc`
+- `tib-nyc`
 
-  `al-nyc` is a simple wrapper for [`nyc`](https://github.com/istanbuljs/nyc).
+  `tib-nyc` is a simple wrapper for [`nyc`](https://github.com/istanbuljs/nyc).
 
   To customize the configuration:
 
@@ -125,9 +125,9 @@ npm run build
     ```json
     "precoverage": "npm test",
     "coverage": "open coverage/index.html",
-    "coverage:ci": "al-nyc report --reporter=text-lcov | coveralls",
-    "test": "al-nyc npm run mocha",
-    "test:ci": "al-nyc npm run mocha"
+    "coverage:ci": "tib-nyc report --reporter=text-lcov | coveralls",
+    "test": "tib-nyc npm run mocha",
+    "test:ci": "tib-nyc npm run mocha"
     ```
 
     `converage:ci` sets up integration with [Coveralls](https://coveralls.io/).
@@ -138,8 +138,8 @@ We consider (console) logging from tests as a bad practice, because such logs
 usually clutter the test output and make it difficult to distinguish legitimate
 error messages from the noise.
 
-By default, `al-mocha` detects when the tests and/or the application tested have
-printed console logs and fails the test run with the following message:
+By default, `tib-mocha` detects when the tests and/or the application tested
+have printed console logs and fails the test run with the following message:
 
 ```
 === ATTENTION - INVALID USAGE OF CONSOLE LOGS DETECTED ===
@@ -155,17 +155,17 @@ responds with an error code as expected. However, because the server is
 configured to log failed requests, it will print a log also for requests where
 the failure was expected and intentional. The solution is to configure your REST
 server to suppress error messages for that specific error code only. Our
-`@artlab/testlab` module is providing a helper
-[`createUnexpectedHttpErrorLogger`](https://github.com/artlab/commons/tree/master/packages/testlab#createUnexpectedHttpErrorLogger)
+`@tib/testlab` module is providing a helper
+[`createUnexpectedHttpErrorLogger`](https://github.com/tibjs/commons/tree/master/packages/testlab#createUnexpectedHttpErrorLogger)
 that makes this task super easy.
 
 Alternatively, it's also possible to disable detection of console logs by
-calling `al-mocha` with `--allow-console-logs` argument.
+calling `tib-mocha` with `--allow-console-logs` argument.
 
 ## Contributions
 
-- [Guidelines](https://github.com/artlab/commons/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/artlab/commons/issues/110)
+- [Guidelines](https://github.com/tibjs/commons/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/tibjs/commons/issues/110)
 
 ## Tests
 
@@ -173,7 +173,7 @@ run `npm test` from the root folder.
 
 ## Contributors
 
-See [all contributors](https://github.com/artlab/commons/graphs/contributors).
+See [all contributors](https://github.com/tibjs/commons/graphs/contributors).
 
 ## License
 

@@ -1,9 +1,9 @@
 {
-  "name": "@artlab/build",
+  "name": "@tib/build",
   "description": "A set of common scripts and default configurations to build LoopBack 4 or other TypeScript modules",
   "repository": {
     "type": "git",
-    "url": "https://github.com/artlab/commons.git",
+    "url": "https://github.com/tibjs/commons.git",
     "directory": "packages/build"
   },
   "version": "6.2.3",
@@ -18,12 +18,12 @@
     "access": "public"
   },
   "dependencies": {
-    "@artlab/eslint-config": "^8.1.3",
-    "@types/mocha": "^7.0.2",
-    "@types/node": "^14.0.20",
+    "@tib/eslint-config": "^8.1.3",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.25",
     "cross-spawn": "^7.0.3",
     "debug": "^4.1.1",
-    "eslint": "^7.4.0",
+    "eslint": "^7.5.0",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",
     "lodash": "^4.17.19",
@@ -32,15 +32,15 @@
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
     "source-map-support": "^0.5.19",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   },
   "bin": {
-    "al-tsc": "./bin/compile-package.js",
-    "al-eslint": "./bin/run-eslint.js",
-    "al-prettier": "./bin/run-prettier.js",
-    "al-mocha": "./bin/run-mocha.js",
-    "al-nyc": "./bin/run-nyc.js",
-    "al-clean": "./bin/run-clean.js"
+    "tib-tsc": "./bin/compile-package.js",
+    "tib-eslint": "./bin/run-eslint.js",
+    "tib-prettier": "./bin/run-prettier.js",
+    "tib-mocha": "./bin/run-mocha.js",
+    "tib-nyc": "./bin/run-nyc.js",
+    "tib-clean": "./bin/run-clean.js"
   },
   "scripts": {
     "test": "npm run mocha",

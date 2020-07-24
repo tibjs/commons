@@ -1,11 +1,11 @@
-# @artlab/eslint-config
+# @tib/eslint-config
 
 Shared ESLint config to enforce a consistent code style for LoopBack development
 
 ## Installation
 
 ```shell
-npm install --save @artlab/eslint-config
+npm install --save @tib/eslint-config
 
 npm install --save-dev \
 eslint \
@@ -22,7 +22,7 @@ Add `.eslintrc.json` file to your project, for example:
 
 ```json
 {
-  "extends": "@artlab/eslint-config"
+  "extends": "@tib/eslint-config"
 }
 ```
 
@@ -35,12 +35,12 @@ the [peerDependencies](package.json) of this module should be added to
 
 ## Contributions
 
-- [Guidelines](https://github.com/artlab/commons/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/artlab/commons/issues/110)
+- [Guidelines](https://github.com/tibjs/commons/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/tibjs/commons/issues/110)
 
 ## Contributors
 
-See [all contributors](https://github.com/artlab/commons/graphs/contributors).
+See [all contributors](https://github.com/tibjs/commons/graphs/contributors).
 
 ## License
 

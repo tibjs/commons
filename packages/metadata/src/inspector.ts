@@ -1,5 +1,5 @@
 // Copyright IBM Corp. 2017,2019. All Rights Reserved.
-// Node module: @artlab/metadata
+// Node module: @tib/metadata
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -38,7 +38,7 @@ export interface InspectionOptions {
  */
 export class MetadataInspector {
   /**
-   * Expose Reflector, which is a wrapper of `Reflect` and it uses `artlab`
+   * Expose Reflector, which is a wrapper of `Reflect` and it uses `tib`
    * as the namespace prefix for all metadata keys
    */
   static readonly Reflector = Reflector;
