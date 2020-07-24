@@ -72,7 +72,6 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "copyright.owner": "IBM Corp.",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
