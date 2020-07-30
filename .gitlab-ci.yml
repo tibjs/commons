@@ -9,11 +9,13 @@ cache:
   paths:
     - node_modules/
 
+before_script:
+  - npm ci
+  - npm run postinstall
+  - npm run build
+
 test:
   script:
-    - npm install
-    - npm run postinstall
-    - npm run build
     - npm run test:ci
     - npm run coverage:ci
   coverage: /Statements\s+:\s(\d+.?\d+)%/
@@ -23,23 +25,3 @@ test:
       # save coverage results
       - coverage
     expire_in: 10 days
-
-# store and publish code coverage HTML report folder
-# https://about.gitlab.com/blog/2016/11/03/publish-code-coverage-report-with-gitlab-pages/
-# the coverage report will be available both as a job artifact
-# and at https://tib.gitr.io/framework/
-pages:
-  stage: deploy
-  dependencies:
-    - test
-  script:
-    # delete everything in the current public folder
-    # and replace with code coverage HTML report
-    - rm -rf public/*
-    - mv coverage/ public
-  artifacts:
-    paths:
-      - public
-    expire_in: 30 days
-  only:
-    - master

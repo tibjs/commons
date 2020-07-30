@@ -32,7 +32,7 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --no-ci --hoist --loglevel warn",
     "postinstall": "npm run -s bootstrap && npm run -s update-ts-project-refs",
     "update-ts-project-refs": "node bin/update-ts-project-refs.js -f",
     "update-packages": "npm run -s update-package-locks",
@@ -64,7 +64,7 @@
     "pretest": "npm run clean && npm run build",
     "test": "node packages/build/bin/run-nyc npm run mocha",
     "test:ci": "node packages/build/bin/run-nyc npm run mocha",
-    "mocha": "node packages/build/bin/run-mocha --lang en_US.UTF-8 \"packages/*/dist/__tests__/**/*.js\" \"packages/build/test/*/*.js\"",
+    "mocha": "node packages/build/bin/run-mocha --lang en_US.UTF-8 \"packages/*/dist/__tests__/**/*.js\" \"packages/build/test/*/*.js\" \"examples/*/dist/__tests__/**/*.js\"",
     "posttest": "npm run lint"
   },
   "config": {
