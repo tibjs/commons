@@ -1,5 +1,5 @@
-# Tib Commons
+# Tib Framework
 
-> A common ts library provides better ts building, linting, testing and metadata
-> interaction features that extracted from
+> The Tib Framework provides a comprehensive programming and configuration model
+> for modern TypeScript/JavaScript applications extracted from
 > [loopback-next](https://github.com/strongloop/loopback-next)
