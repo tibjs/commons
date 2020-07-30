@@ -565,8 +565,8 @@ npm install --save @tib/metadata
 
 ## Contributions
 
-- [Guidelines](https://github.com/tibjs/commons/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/tibjs/commons/issues/110)
+- [Guidelines](https://github.com/tibjs/framework/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/tibjs/framework/issues/110)
 
 ## Tests
 
@@ -574,7 +574,7 @@ Run `npm test` from the root folder.
 
 ## Contributors
 
-See [all contributors](https://github.com/tibjs/commons/graphs/contributors).
+See [all contributors](https://github.com/tibjs/framework/graphs/contributors).
 
 ## License
 

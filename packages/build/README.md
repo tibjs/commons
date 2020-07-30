@@ -156,7 +156,7 @@ configured to log failed requests, it will print a log also for requests where
 the failure was expected and intentional. The solution is to configure your REST
 server to suppress error messages for that specific error code only. Our
 `@tib/testlab` module is providing a helper
-[`createUnexpectedHttpErrorLogger`](https://github.com/tibjs/commons/tree/master/packages/testlab#createUnexpectedHttpErrorLogger)
+[`createUnexpectedHttpErrorLogger`](https://github.com/tibjs/framework/tree/master/packages/testlab#createUnexpectedHttpErrorLogger)
 that makes this task super easy.
 
 Alternatively, it's also possible to disable detection of console logs by
@@ -164,8 +164,8 @@ calling `tib-mocha` with `--allow-console-logs` argument.
 
 ## Contributions
 
-- [Guidelines](https://github.com/tibjs/commons/blob/master/docs/CONTRIBUTING.md)
-- [Join the team](https://github.com/tibjs/commons/issues/110)
+- [Guidelines](https://github.com/tibjs/framework/blob/master/docs/CONTRIBUTING.md)
+- [Join the team](https://github.com/tibjs/framework/issues/110)
 
 ## Tests
 
@@ -173,7 +173,7 @@ run `npm test` from the root folder.
 
 ## Contributors
 
-See [all contributors](https://github.com/tibjs/commons/graphs/contributors).
+See [all contributors](https://github.com/tibjs/framework/graphs/contributors).
 
 ## License
 

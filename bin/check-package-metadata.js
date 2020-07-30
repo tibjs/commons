@@ -137,7 +137,7 @@ async function checkPkgsPackageJson(packages, rootPkg) {
     const isCorrectRepositoryUrl =
       pkg.repository &&
       pkg.repository.url &&
-      pkg.repository.url.includes('https://github.com/tibjs/commons.git');
+      pkg.repository.url.includes('https://github.com/tibjs/framework.git');
 
     if (!isCorrectRepositoryUrl) {
       errors.push(getErrorText(p.name, 'repository.url'));
@@ -167,7 +167,7 @@ function formatErrorsText(errors) {
   const errorPackages = errors.map(error => `- ${error}`).join('\n');
 
   return [
-    'Some of the packages are not following commons guidelines:',
+    'Some of the packages are not following framework guidelines:',
     '',
     errorPackages,
     '',

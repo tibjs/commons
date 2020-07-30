@@ -2,7 +2,7 @@
 
 /**
  * This is an internal script to run `lerna` command with enviornment variable
- * `LERNA_ROOT_PATH` set to the root directory of `commons` monorepo
+ * `LERNA_ROOT_PATH` set to the root directory of `framework` monorepo
  */
 'use strict';
 

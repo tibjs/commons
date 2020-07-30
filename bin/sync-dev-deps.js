@@ -71,13 +71,13 @@ async function syncDevDeps() {
 function updatePackageJson(pkgFile, masterDeps) {
   const data = readPackageJson(pkgFile);
   const isExample = data.name.startsWith('@tib/example-');
-  const isRoot = data.name === 'commons';
+  const isRoot = data.name === 'framework';
 
   let modified = false;
   for (const dep in masterDeps) {
     if (
       data.devDependencies &&
-      // Force update for examples and commons
+      // Force update for examples and framework
       (isExample || isRoot || dep in data.devDependencies)
     ) {
       modified = modified || data.devDependencies[dep] !== masterDeps[dep];

@@ -1,5 +1,5 @@
 /**
- * This is an internal script to list lerna packages for commons.
+ * This is an internal script to list lerna packages for framework.
  * See https://github.com/marionebl/commitlint/pull/406
  */
 'use strict';
