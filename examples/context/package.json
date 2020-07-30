@@ -1,0 +1,59 @@
+{
+  "name": "@tib/example-context",
+  "version": "2.1.6",
+  "description": "Standalone examples to illustrate features provided by @tib/context",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=10.16"
+  },
+  "author": "IBM Corp.",
+  "copyright.owner": "IBM Corp.",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "acceptance": "tib-mocha \"dist/__tests__/acceptance/**/*.js\"",
+    "build": "tib-tsc",
+    "build:watch": "tib-tsc --watch",
+    "clean": "tib-clean *example-context*.tgz dist *.tsbuildinfo package",
+    "verify": "npm pack && tar xf *example-context*.tgz && tree package && npm run clean",
+    "lint": "npm run prettier:check && npm run eslint",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix",
+    "prettier:cli": "tib-prettier \"**/*.ts\" \"**/*.js\"",
+    "prettier:check": "npm run prettier:cli -- -l",
+    "prettier:fix": "npm run prettier:cli -- --write",
+    "eslint": "tib-eslint --report-unused-disable-directives .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "pretest": "npm run clean && npm run build",
+    "test": "tib-mocha \"dist/__tests__/**/*.js\"",
+    "posttest": "npm run lint",
+    "test:dev": "tib-mocha dist/__tests__/**/*.js && npm run posttest",
+    "prestart": "npm run build",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tibjs/framework.git",
+    "directory": "examples/context"
+  },
+  "dependencies": {
+    "@tib/context": "^3.9.3",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@tib/build": "^6.1.1",
+    "@tib/eslint-config": "^8.0.4",
+    "@tib/testlab": "^3.2.1",
+    "@types/node": "^10.17.28",
+    "eslint": "^7.5.0",
+    "typescript": "~3.9.7"
+  },
+  "keywords": [
+    "tib",
+    "LoopBack",
+    "example",
+    "tutorial"
+  ]
+}

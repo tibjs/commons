@@ -1,0 +1,46 @@
+{
+  "name": "@tib/context",
+  "description": "This module provides facilities to manage artifacts and their dependencies using Context in your Node.js applications.",
+  "version": "3.9.3",
+  "keywords": [],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=10.16"
+  },
+  "author": "tib ",
+  "license": "MIT ",
+  "scripts": {
+    "acceptance": "tib-mocha \"dist/__tests__/acceptance/**/*.js\"",
+    "build": "tib-tsc",
+    "clean": "tib-clean tib-context*.tgz dist *.tsbuildinfo package",
+    "pretest": "npm run build",
+    "test": "tib-mocha \"dist/__tests__/**/*.js\"",
+    "unit": "tib-mocha \"dist/__tests__/unit/**/*.js\"",
+    "verify": "npm pack && tar xf tib-context*.tgz && tree package && npm run clean"
+  },
+  "dependencies": {
+    "@tib/metadata": "^2.2.3",
+    "@types/debug": "^4.1.5",
+    "debug": "^4.1.1",
+    "hyperid": "^2.0.5",
+    "p-event": "^4.2.0",
+    "tslib": "^2.0.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@tib/build": "^6.1.1",
+    "@tib/eslint-config": "^8.0.4",
+    "@tib/testlab": "^3.2.1",
+    "@types/bluebird": "^3.5.32",
+    "@types/node": "^10.17.28",
+    "@types/uuid": "^8.0.0",
+    "bluebird": "^3.7.2"
+  },
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ]
+}

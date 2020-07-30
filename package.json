@@ -1,6 +1,6 @@
 {
   "name": "tib-framework",
-  "description": "A common ts library provides better ts building, linting, testing and metadata interaction features that extracted from loopback-next",
+  "description": "A common ts library provides better ts building, linting, testing and metadata interaction features that extracted from tib-next",
   "repository": {
     "type": "git",
     "url": "https://github.com/tibjs/framework.git"

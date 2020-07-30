@@ -5,6 +5,12 @@
   },
   "references": [
     {
+      "path": "examples/context/tsconfig.json"
+    },
+    {
+      "path": "packages/context/tsconfig.json"
+    },
+    {
       "path": "packages/metadata/tsconfig.json"
     },
     {
