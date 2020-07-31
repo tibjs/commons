@@ -96,7 +96,7 @@ export interface Injection<ValueType = BoundValue> {
 
 /**
  * A decorator to annotate method arguments for automatic injection
- * by LoopBack IoC container.
+ * by Tib IoC container.
  *
  * @example
  * Usage - Typescript:

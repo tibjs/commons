@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /*
- * This is an internal script for LoopBack maintainers to check out a forked
+ * This is an internal script for Tib maintainers to check out a forked
  * repo/branch for a given pull request
  *
- * Sometimes a LoopBack maintainer needs to help improve/fix a pull request.
+ * Sometimes a Tib maintainer needs to help improve/fix a pull request.
  * This script allows us to set up the PR code base as follows:
  *
  * 1. Read the url and branch for base and head for the PR

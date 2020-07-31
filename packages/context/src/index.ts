@@ -5,7 +5,7 @@
 
 /**
  * Facilities to manage artifacts and their dependencies using {@link Context}
- * in your Node.js applications. It can be used independent of the LoopBack
+ * in your Node.js applications. It can be used independent of the Tib
  * framework.
  *
  * @remarks

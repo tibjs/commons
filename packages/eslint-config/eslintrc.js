@@ -6,7 +6,7 @@
 const fs = require('fs');
 
 /**
- * Default ESLint configuration for LoopBack
+ * Default ESLint configuration for Tib
  *
  * See https://eslint.org/docs/user-guide/configuring
  */

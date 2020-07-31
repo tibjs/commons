@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * This is an internal script to update peer dependencies based on released
- * LoopBack package versions.
+ * Tib package versions.
  */
 'use strict';
 

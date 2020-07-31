@@ -4,10 +4,10 @@
 // License text available at https://opensource.org/licenses/MIT
 
 /**
- * A collection of test utilities we use to write LoopBack tests.
+ * A collection of test utilities we use to write Tib tests.
  *
  * @remarks
- * Test utilities to help write LoopBack 4 tests:
+ * Test utilities to help write Tib 4 tests:
  *
  * - `expect` - behavior-driven development (BDD) style assertions
  * - `sinon`
@@ -16,7 +16,7 @@
  *   - stubs: functions (spies) with pre-programmed behavior
  *   - mocks: fake methods (like spies) with pre-programmed behavior
  *     (like stubs) as well as pre-programmed expectations
- * - Helpers for creating `supertest` clients for LoopBack applications
+ * - Helpers for creating `supertest` clients for Tib applications
  * - HTTP request/response stubs for writing tests without a listening HTTP
  *   server
  * - Swagger/OpenAPI spec validation

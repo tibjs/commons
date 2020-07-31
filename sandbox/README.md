@@ -1,7 +1,7 @@
 # sandbox
 
 This directory can be used to add applications or modules that need to be tested
-against the LoopBack 4 source code (as symbolically linked dependencies). Sub
+against the Tib 4 source code (as symbolically linked dependencies). Sub
 directories with `package.json` will be picked up by `lerna` as a package of the
 `framework` monorepo.
 
@@ -28,4 +28,4 @@ cd sandbox/example
 node .
 ```
 
-Your project is now ready against the LoopBack 4 source code.
+Your project is now ready against the Tib 4 source code.

@@ -1,6 +1,6 @@
 # @tib/eslint-config
 
-Shared ESLint config to enforce a consistent code style for LoopBack development
+Shared ESLint config to enforce a consistent code style for Tib development
 
 ## Installation
 

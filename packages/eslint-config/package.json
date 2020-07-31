@@ -1,13 +1,11 @@
 {
   "name": "@tib/eslint-config",
   "version": "8.2.1",
-  "description": "ESLint configuration for LoopBack projects",
+  "description": "ESLint configuration for Tib projects",
   "engines": {
     "node": ">=10.16"
   },
   "main": "eslintrc.js",
-  "author": "IBM Corp.",
-  "copyright.owner": "IBM Corp.",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

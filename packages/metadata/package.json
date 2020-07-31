@@ -16,8 +16,6 @@
     "unit": "tib-mocha \"dist/__tests__/unit/**/*.js\"",
     "verify": "npm pack && tar xf tib-metadata*.tgz && tree package && npm run clean"
   },
-  "author": "IBM Corp.",
-  "copyright.owner": "IBM Corp.",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -37,7 +35,7 @@
     "@types/node": "^14.0.25"
   },
   "keywords": [
-    "LoopBack",
+    "Tib",
     "Decorators",
     "Reflect"
   ],

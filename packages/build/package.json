@@ -1,6 +1,6 @@
 {
   "name": "@tib/build",
-  "description": "A set of common scripts and default configurations to build LoopBack 4 or other TypeScript modules",
+  "description": "A set of common scripts and default configurations to build Tib 4 or other TypeScript modules",
   "repository": {
     "type": "git",
     "url": "https://github.com/tibjs/framework.git",
@@ -11,8 +11,6 @@
     "node": ">=10.16"
   },
   "main": "index.js",
-  "author": "IBM Corp.",
-  "copyright.owner": "IBM Corp.",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

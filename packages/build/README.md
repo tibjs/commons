@@ -1,7 +1,7 @@
 # @tib/build
 
 This module contains a set of common scripts and default configurations to build
-LoopBack 4 or other TypeScript modules, including:
+Tib 4 or other TypeScript modules, including:
 
 - tib-tsc: Use
   [`tsc`](https://www.typescriptlang.org/docs/handbook/compiler-options.html) to

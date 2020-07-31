@@ -10,8 +10,6 @@
   "engines": {
     "node": ">=10.16"
   },
-  "author": "IBM Corp.",
-  "copyright.owner": "IBM Corp.",
   "license": "MIT",
   "repository": {
     "type": "git",

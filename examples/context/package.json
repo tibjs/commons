@@ -7,8 +7,6 @@
   "engines": {
     "node": ">=10.16"
   },
-  "author": "IBM Corp.",
-  "copyright.owner": "IBM Corp.",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -52,7 +50,7 @@
   },
   "keywords": [
     "tib",
-    "LoopBack",
+    "Tib",
     "example",
     "tutorial"
   ]
