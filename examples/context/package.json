@@ -1,6 +1,6 @@
 {
   "name": "@tib/example-context",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Standalone examples to illustrate features provided by @tib/context",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -37,7 +37,7 @@
     "directory": "examples/context"
   },
   "dependencies": {
-    "@tib/context": "^3.10.1",
+    "@tib/context": "^3.10.2",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
