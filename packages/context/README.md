@@ -3,12 +3,11 @@
 > This module provides facilities to manage artifacts and their dependencies
 > using Context in your Node.js applications.
 
-
 ## Overview
 
-The `@tib/context` package exposes TypeScript/JavaScript APIs and
-decorators to register artifacts, declare dependencies, and resolve artifacts by
-keys. The `Context` also serves as an
+The `@tib/context` package exposes TypeScript/JavaScript APIs and decorators to
+register artifacts, declare dependencies, and resolve artifacts by keys. The
+`Context` also serves as an
 [IoC container](https://en.wikipedia.org/wiki/Inversion_of_control) to support
 [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
 
