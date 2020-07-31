@@ -32,7 +32,7 @@
     "typescript": "^3.9.7"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap --no-ci --hoist --loglevel warn",
+    "bootstrap": "lerna bootstrap",
     "postinstall": "npm run -s bootstrap && npm run -s update-ts-project-refs",
     "update-ts-project-refs": "node bin/update-ts-project-refs.js -f",
     "update-packages": "npm run -s update-package-locks",
