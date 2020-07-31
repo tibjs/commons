@@ -42,7 +42,7 @@ async function checkPackageLocks() {
 
   async function checkLockFile(lockFile) {
     const file = path.resolve(project.rootPath, lockFile);
-    const found = await fs.exists(file);
+    const found = await fs.pathExists(file);
     if (!found) return [];
     let data = {};
     try {
