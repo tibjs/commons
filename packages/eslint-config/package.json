@@ -1,6 +1,6 @@
 {
   "name": "@tib/eslint-config",
-  "version": "8.2.2",
+  "version": "8.2.3",
   "description": "ESLint configuration for Tib projects",
   "engines": {
     "node": ">=10.16"
