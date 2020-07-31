@@ -1,5 +1,5 @@
 // Copyright IBM Corp. 2019,2020. All Rights Reserved.
-// Node module: @tib/metadata
+// Node module: @loopback/metadata
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
