@@ -1,7 +1,7 @@
 {
   "name": "@tib/context",
   "description": "This module provides facilities to manage artifacts and their dependencies using Context in your Node.js applications.",
-  "version": "3.9.3",
+  "version": "3.10.0",
   "keywords": [],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,7 +20,7 @@
     "verify": "npm pack && tar xf tib-context*.tgz && tree package && npm run clean"
   },
   "dependencies": {
-    "@tib/metadata": "^2.2.3",
+    "@tib/metadata": "^2.4.1",
     "@types/debug": "^4.1.5",
     "debug": "^4.1.1",
     "hyperid": "^2.0.5",
@@ -29,9 +29,9 @@
     "uuid": "^8.3.0"
   },
   "devDependencies": {
-    "@tib/build": "^6.1.1",
-    "@tib/eslint-config": "^8.0.4",
-    "@tib/testlab": "^3.2.1",
+    "@tib/build": "^6.3.1",
+    "@tib/eslint-config": "^8.2.1",
+    "@tib/testlab": "^3.4.1",
     "@types/bluebird": "^3.5.32",
     "@types/node": "^10.17.28",
     "@types/uuid": "^8.0.0",

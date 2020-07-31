@@ -1,6 +1,6 @@
 {
   "name": "@tib/eslint-config",
-  "version": "8.2.0",
+  "version": "8.2.1",
   "description": "ESLint configuration for LoopBack projects",
   "engines": {
     "node": ">=10.16"

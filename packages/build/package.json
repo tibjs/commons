@@ -6,7 +6,7 @@
     "url": "https://github.com/tibjs/framework.git",
     "directory": "packages/build"
   },
-  "version": "6.3.0",
+  "version": "6.3.1",
   "engines": {
     "node": ">=10.16"
   },
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@tib/eslint-config": "^8.2.0",
+    "@tib/eslint-config": "^8.2.1",
     "@types/mocha": "^8.0.0",
     "@types/node": "^14.0.25",
     "cross-spawn": "^7.0.3",

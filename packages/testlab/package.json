@@ -1,6 +1,6 @@
 {
   "name": "@tib/testlab",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "description": "A collection of test utilities we use to write LoopBack tests.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,8 +36,8 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@tib/build": "^6.3.0",
-    "@tib/eslint-config": "^8.2.0",
+    "@tib/build": "^6.3.1",
+    "@tib/eslint-config": "^8.2.1",
     "@types/node": "^14.0.25"
   },
   "files": [
