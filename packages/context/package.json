@@ -8,8 +8,11 @@
   "engines": {
     "node": ">=10.16"
   },
-  "author": "tib ",
+  "author": "Yvan Tao",
   "license": "MIT ",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "acceptance": "tib-mocha \"dist/__tests__/acceptance/**/*.js\"",
     "build": "tib-tsc",

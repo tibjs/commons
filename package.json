@@ -9,7 +9,7 @@
   "engines": {
     "node": ">=10.16"
   },
-  "author": "tib",
+  "author": "Yvan Tao",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
