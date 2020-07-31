@@ -1,6 +1,6 @@
 {
   "name": "@tib/metadata",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Utilities to help developers implement TypeScript decorators, define/merge metadata, and inspect metadata",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

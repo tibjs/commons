@@ -6,7 +6,7 @@
     "url": "https://github.com/tibjs/framework.git",
     "directory": "packages/build"
   },
-  "version": "6.3.1",
+  "version": "6.3.2",
   "engines": {
     "node": ">=10.16"
   },
