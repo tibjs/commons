@@ -1,6 +1,6 @@
 {
   "name": "@tib/example-context",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Standalone examples to illustrate features provided by @tib/context",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -37,13 +37,13 @@
     "directory": "examples/context"
   },
   "dependencies": {
-    "@tib/context": "^3.10.2",
+    "@tib/context": "^3.10.3",
     "tslib": "^2.0.1"
   },
   "devDependencies": {
-    "@tib/build": "^6.3.3",
-    "@tib/eslint-config": "^8.2.3",
-    "@tib/testlab": "^3.4.3",
+    "@tib/build": "^6.3.4",
+    "@tib/eslint-config": "^8.2.4",
+    "@tib/testlab": "^3.4.4",
     "@types/node": "^14.6.1",
     "eslint": "^7.7.0",
     "typescript": "^4.0.2"

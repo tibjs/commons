@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.4](https://github.com/tibjs/framework/compare/@tib/build@6.3.3...@tib/build@6.3.4) (2020-08-28)
+
+**Note:** Version bump only for package @tib/build
+
+
+
+
+
 ## [6.3.3](https://github.com/tibjs/framework/compare/@tib/build@6.3.1...@tib/build@6.3.3) (2020-07-31)
 
 **Note:** Version bump only for package @tib/build
